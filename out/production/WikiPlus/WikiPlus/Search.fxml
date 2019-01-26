@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 
-<BorderPane prefHeight="502.0" prefWidth="737.0" stylesheets="/css/bootstrap3.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="/css/bootstrap3.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WikiPlus.SearchController">
    <center>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="433.0" prefWidth="737.0">
          <children>
@@ -21,42 +21,25 @@
                   <Image url="/images/Logo.png" />
                </image>
             </ImageView>
-            <Button layoutX="178.0" layoutY="233.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="37.0" styleClass="info" stylesheets="@../css/bootstrap3.css">
+            <Button fx:id="searchBtn" layoutX="178.0" layoutY="233.0" mnemonicParsing="false" onAction="#search" prefHeight="39.0" prefWidth="37.0" styleClass="info" stylesheets="@../css/bootstrap3.css">
                <graphic>
                   <ImageView fitHeight="21.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="/images/search.png" />
-                     </image></ImageView>
-               </graphic></Button>
-         </children>
-      </AnchorPane>
-   </center>
-   <top>
-      <HBox alignment="TOP_RIGHT" prefHeight="33.0" prefWidth="737.0" BorderPane.alignment="CENTER">
-         <children>
-            <MenuButton mnemonicParsing="false" prefHeight="35.0" prefWidth="66.0" styleClass="arrow-button">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Sign in" />
-                <MenuItem mnemonicParsing="false" text="About" />
-              </items>
-               <graphic>
-                  <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="/images/photo.png" />
                      </image>
                   </ImageView>
                </graphic>
-            </MenuButton>
+            </Button>
          </children>
-      </HBox>
-   </top>
+      </AnchorPane>
+   </center>
    <bottom>
       <HBox alignment="CENTER" prefHeight="57.0" prefWidth="737.0" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
-            <image>
-               <Image url="/images/Telegram.png" />
-            </image>
+               <image>
+                  <Image url="/images/Telegram.png" />
+               </image>
             </ImageView>
             <Separator orientation="VERTICAL" prefHeight="57.0" prefWidth="14.0" />
             <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
@@ -73,4 +56,24 @@
          </children>
       </HBox>
    </bottom>
+   <top>
+      <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuButton mnemonicParsing="false" prefHeight="35.0" prefWidth="66.0" styleClass="arrow-button">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Sign in" onAction="#signIn"/>
+                  <MenuItem mnemonicParsing="false" text="Sign up" onAction="#signUp"/>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/images/photo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+         </children>
+      </HBox>
+   </top>
 </BorderPane>
