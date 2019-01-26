@@ -10,7 +10,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("WikiPlus.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("search.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(root, 737, 531));
         primaryStage.setMinHeight(531.0);
