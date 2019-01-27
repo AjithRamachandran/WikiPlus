@@ -15,15 +15,15 @@
    <center>
       <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="RIGHT_TO_LEFT" prefHeight="433.0" prefWidth="737.0">
          <children>
-            <TextField alignment="CENTER_RIGHT" layoutX="178.0" layoutY="233.0" prefHeight="34.0" prefWidth="367.0" stylesheets="/css/bootstrap3.css" AnchorPane.bottomAnchor="166.0" AnchorPane.topAnchor="233.0" />
+            <TextField fx:id="searchField" alignment="CENTER_RIGHT" layoutX="178.0" layoutY="233.0" prefHeight="34.0" prefWidth="367.0" stylesheets="/css/bootstrap3.css" AnchorPane.bottomAnchor="166.0" AnchorPane.topAnchor="233.0" />
             <ImageView fitHeight="150.0" fitWidth="210.0" layoutX="284.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="284.0" AnchorPane.rightAnchor="330.8350524902344">
                <image>
                   <Image url="/images/Logo.png" />
                </image>
             </ImageView>
-            <Button fx:id="searchBtn" layoutX="178.0" layoutY="233.0" mnemonicParsing="false" onAction="#search" prefHeight="39.0" prefWidth="37.0" styleClass="info" stylesheets="@../css/bootstrap3.css">
+            <Button fx:id="searchBtn" layoutX="178.0" layoutY="233.0" mnemonicParsing="false" onAction="#search" prefHeight="39.0" prefWidth="37.0" styleClass="info" stylesheets="/css/bootstrap3.css">
                <graphic>
-                  <ImageView fitHeight="21.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView disable="true" fitHeight="21.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="/images/search.png" />
                      </image>
@@ -34,7 +34,7 @@
       </AnchorPane>
    </center>
    <bottom>
-      <HBox alignment="CENTER" prefHeight="57.0" prefWidth="737.0" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="737.0" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -59,11 +59,10 @@
    <top>
       <HBox alignment="CENTER_RIGHT" prefHeight="35.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <MenuButton mnemonicParsing="false" prefHeight="35.0" prefWidth="66.0" styleClass="arrow-button">
+            <MenuButton fx:id="options" mnemonicParsing="false" prefHeight="35.0" prefWidth="66.0" styleClass="arrow-button">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Sign in" onAction="#signIn"/>
-                  <MenuItem mnemonicParsing="false" text="Sign up" onAction="#signUp"/>
-                  <MenuItem mnemonicParsing="false" text="About" />
+                  <MenuItem mnemonicParsing="false" onAction="#signIn" text="Sign in" />
+                  <MenuItem mnemonicParsing="false" onAction="#signUp" text="Sign up" />
                </items>
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">

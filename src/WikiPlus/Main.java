@@ -2,6 +2,8 @@ package WikiPlus;
 
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -12,6 +14,11 @@ import java.io.IOException;
 
 public class Main extends Application {
     private static Stage window;
+    static boolean isSignedIn = false;
+
+    static void editOptions() {
+
+    }
 
     @Override
     public void start(Stage window) throws Exception{
@@ -27,8 +34,8 @@ public class Main extends Application {
     }
 
     static void showScene(String fxml) throws IOException {
-        Parent signIn = FXMLLoader.load(Main.class.getResource(fxml));
-        Main.window.setScene(new Scene(signIn));
+        Parent root = FXMLLoader.load(Main.class.getResource(fxml));
+        Main.window.setScene(new Scene(root));
         Main.window.setResizable(false);
         Main.window.setOnCloseRequest(e -> Platform.exit());
         Main.window.show();
