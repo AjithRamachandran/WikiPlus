@@ -10,30 +10,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/WikiPlus/ResultList.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WikiPlus/ResultListController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/db.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/user_data.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/parser/wiki.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaFXApp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/JavaFXApp.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WikiPlus/database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/WikiPlus/libdb.so" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WikiPlus.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WikiPlus.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/Result.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/Result.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/ResultController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/ResultController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/Search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/Search.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/SearchController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/SearchController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/ResultListController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/ResultListController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/SignIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/SignIn.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/SignInController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/SignInController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/SignUp.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/SignUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WikiPlus/WikiPlus/SignUpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WikiPlus/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WikiPlus/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WikiPlus/Result.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/WikiPlus/Result.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WikiPlus/ResultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WikiPlus/ResultController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WikiPlus/Search.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/WikiPlus/Search.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WikiPlus/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WikiPlus/SearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WikiPlus/data/db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/WikiPlus/data/user_data.db" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/WikiPlus/data/user_data.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WikiPlus/SignIn.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/WikiPlus/SignIn.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WikiPlus/SignInController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WikiPlus/SignInController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WikiPlus/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/WikiPlus/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WikiPlus/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WikiPlus/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/db.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/db.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/user_data.db" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/user_data.db" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,14 +97,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WikiPlus/ResultListController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="72" column="1" lean-forward="true" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+            <state relative-caret-position="161">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/data/db.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1196">
+              <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/database.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="22" selection-start-line="22" selection-end-line="23" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WikiPlus/database.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WikiPlus/SignIn.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="73" column="78" selection-start-line="73" selection-start-column="78" selection-end-line="73" selection-end-column="78" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WikiPlus/SignInController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
-                <element signature="e#396#397#0" expanded="true" />
-                <element signature="e#429#430#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WikiPlus/SignUp.fxml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/WikiPlus/SignUpController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="529">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,12 +179,12 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WikiPlus/Result.fxml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="92">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
               <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
             </state>
           </provider>
-          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -132,9 +192,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
         <option value="Python Script" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -159,13 +219,9 @@
         <option value="$PROJECT_DIR$/src/WikiPlus/WikiPlus.fxml" />
         <option value="$PROJECT_DIR$/src/css/bootstrap3.css" />
         <option value="$PROJECT_DIR$/src/WikiPlus/Main.fxml" />
-        <option value="$PROJECT_DIR$/src/WikiPlus/SignUp.fxml" />
-        <option value="$PROJECT_DIR$/src/WikiPlus/SignUpController.java" />
         <option value="$PROJECT_DIR$/src/parser/parser.py" />
         <option value="$PROJECT_DIR$/src/data/data.cpp" />
         <option value="$PROJECT_DIR$/src/data/db.py" />
-        <option value="$PROJECT_DIR$/src/WikiPlus/SignIn.fxml" />
-        <option value="$PROJECT_DIR$/src/WikiPlus/SignInController.java" />
         <option value="$PROJECT_DIR$/src/WikiPlus/Search.fxml" />
         <option value="$PROJECT_DIR$/src/WikiPlus/Main.java" />
         <option value="$PROJECT_DIR$/src/WikiPlus/SearchController.java" />
@@ -173,11 +229,18 @@
         <option value="$PROJECT_DIR$/src/WikiPlus/ResultController.java" />
         <option value="$PROJECT_DIR$/src/WikiPlus/Result.fxml" />
         <option value="$PROJECT_DIR$/src/WikiPlus/ResultListController.java" />
+        <option value="$PROJECT_DIR$/src/WikiPlus/SignUp.fxml" />
+        <option value="$PROJECT_DIR$/src/WikiPlus/SignUpController.java" />
+        <option value="$PROJECT_DIR$/src/WikiPlus/SignInController.java" />
+        <option value="$PROJECT_DIR$/src/data/db.c" />
+        <option value="$PROJECT_DIR$/src/data/db.cpp" />
+        <option value="$PROJECT_DIR$/src/WikiPlus/SignIn.fxml" />
+        <option value="$PROJECT_DIR$/src/WikiPlus/database.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="26" />
     <option name="width" value="1366" />
     <option name="height" value="742" />
@@ -191,7 +254,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -227,9 +289,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -239,7 +303,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548576460317" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548776340530" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -250,6 +314,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/WikiPlus" />
       <recent name="$PROJECT_DIR$/src/css" />
     </key>
   </component>
@@ -357,16 +422,18 @@
       <workItem from="1548520136024" duration="757000" />
       <workItem from="1548556980469" duration="7397000" />
       <workItem from="1548565174403" duration="1895000" />
-      <workItem from="1548573522632" duration="2387000" />
+      <workItem from="1548573522632" duration="3955000" />
+      <workItem from="1548595176752" duration="655000" />
+      <workItem from="1548766388791" duration="22000" />
+      <workItem from="1548766430040" duration="8091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46124000" />
+    <option name="totallyTimeSpent" value="56460000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="26" width="1366" height="742" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="26" width="1366" height="742" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16515152" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -377,13 +444,13 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32847896" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.9514563" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44174758" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39967638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32847896" />
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
@@ -430,16 +497,6 @@
     <entry file="file://$PROJECT_DIR$/src/WikiPlus/Results.java" />
     <entry file="file://$PROJECT_DIR$/main.java" />
     <entry file="file://$PROJECT_DIR$/src/WikiPlus/Main.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/WikiPlus/SignUpController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/parser/wiki.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -448,36 +505,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/data.cpp" />
-    <entry file="file://$PROJECT_DIR$/src/data/db.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WikiPlus/SignUp.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WikiPlus/SignIn.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="1403">
-          <caret line="73" column="78" selection-start-line="73" selection-start-column="78" selection-end-line="73" selection-end-column="78" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/WikiPlus.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -496,13 +527,6 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5313" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/WikiPlus/SignInController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
@@ -541,7 +565,6 @@
           <caret line="23" column="180" selection-start-line="23" selection-start-column="180" selection-end-line="23" selection-end-column="180" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WikiPlus/ResultList.fxml">
       <provider selected="true" editor-type-id="text-editor">
@@ -549,7 +572,6 @@
           <caret line="18" column="94" selection-start-line="18" selection-start-column="94" selection-end-line="18" selection-end-column="94" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WikiPlus/ResultController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -564,22 +586,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/WikiPlus/ResultListController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/WikiPlus/Result.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="92">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
           <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WikiPlus/SignUp.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
         </state>
       </provider>
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WikiPlus/ResultListController.java">
+    <entry file="file://$PROJECT_DIR$/src/WikiPlus/SignUpController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="72" column="1" lean-forward="true" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+        <state relative-caret-position="529">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/database.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="22" selection-start-line="22" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WikiPlus/SignIn.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="73" column="78" selection-start-line="73" selection-start-column="78" selection-end-line="73" selection-end-column="78" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WikiPlus/SignInController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WikiPlus/database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/db.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
         </state>
       </provider>
     </entry>

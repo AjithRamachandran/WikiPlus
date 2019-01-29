@@ -1,13 +1,11 @@
 package WikiPlus;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Menu;
 import javafx.scene.control.TextField;
 
 import java.io.IOException;
 
 public class SignInController {
-
     @FXML private TextField userName, passWord;
 
     @FXML
@@ -24,10 +22,9 @@ public class SignInController {
     private void signIn() {
         String uName = userName.getText();
         String pWord = passWord.getText();
-        boolean result = (uName.length() > pWord.length());
-//        metacall_load_from_file('py', [ 'db.cpp' ]);
-//        boolean result = metacall('search', );
-        if(result) {
+        database db = new database();
+        String result = db.searchUser(uName, pWord);
+        if(result.equals("Error")) {
             Main.isSignedIn = true;
             SearchController.setMenuItems(uName);
             ResultController.setMenuItems(uName);

@@ -42,7 +42,7 @@
                 <Separator layoutX="502.0" layoutY="288.0" orientation="VERTICAL" prefHeight="245.0" prefWidth="0.0" />
                 <PasswordField fx:id="passWord" layoutX="59.0" layoutY="239.0" onAction="#signIn" prefHeight="26.0" prefWidth="378.0" promptText="Password" />
                 <TextField fx:id="userName" layoutX="59.0" layoutY="171.0" prefHeight="26.0" prefWidth="378.0" promptText="Username" styleClass="text-field" stylesheets="@../css/bootstrap3.css" />
-                <Button layoutX="59.0" layoutY="315.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="378.0" styleClass="info" stylesheets="@../css/bootstrap3.css" text="Log In" />
+                <Button fx:id="logIn" layoutX="59.0" layoutY="315.0" mnemonicParsing="false" onAction="#signIn" prefHeight="26.0" prefWidth="378.0" styleClass="info" stylesheets="@../css/bootstrap3.css" text="Log In" />
                 <Button layoutX="611.0" layoutY="254.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="264.0" styleClass="danger" stylesheets="@../css/bootstrap3.css" text="Log In with Google">
                     <graphic>
                         <ImageView fitHeight="22.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
