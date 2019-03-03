@@ -8,17 +8,19 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import static utils.wikipedia.search;
+
 public class ResultListController {
-    private static String searchText;
     private Map<String, String> wordsAndDescriptions = new HashMap<>();
+    static String key;
 
     @FXML private ListView<String> tempList;
 
     static void setSearchText(String text) {
-        searchText = text;
+        key = text;
     }
 
-    public static void setMenuItems(String uName) {
+    static void setMenuItems(String uName) {
     }
 
     private String getResults(String text) {
@@ -26,18 +28,19 @@ public class ResultListController {
     }
 
     private void getOptions() {
-        for(int i=0; i<20;  i++) {
-            String text = "Text" + i;
-            String instantResult = "instantResult" + i;
-            wordsAndDescriptions.put(text, instantResult);
-        }
+//        for(int i=0; i<20;  i++) {
+//            String text = "Text" + i;
+//            String instantResult = "instantResult" + i;
+//            wordsAndDescriptions.put(text, instantResult);
+//        }
+
         if(wordsAndDescriptions.isEmpty()) {
             wordsAndDescriptions.put("Not Found", "The Keyword you search is not found in Wikipedia! :(");
         }
     }
 
     @FXML
-    private void initialize() {
+    private void initialize() throws IOException {
         getOptions();
         for (Map.Entry<String, String> entry : wordsAndDescriptions.entrySet()) {
             String key = entry.getKey();
@@ -52,7 +55,7 @@ public class ResultListController {
         String text = tempList.getSelectionModel().getSelectedItem();
         String[] keywords = text.split("\\r?\\n");
         String keyword = keywords[0];
-        String result = "This is a Test This is a Test This is a Test This is a Test This is a Test This is a Test This is a Test This is a Test This is a Test";
+        String result = search(key);
         ResultController.setResultText(result);
         Main.showScene("fxml/Result.fxml");
     }
