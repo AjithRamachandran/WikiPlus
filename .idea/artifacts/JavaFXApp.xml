@@ -6,13 +6,13 @@
         <option name="appClass" value="WikiPlus.Main" />
         <option name="description" value="" />
         <option name="htmlPlaceholderId" value="" />
-        <option name="title" value="" />
+        <option name="title" value="WikiPlus" />
         <option name="vendor" value="" />
         <option name="version" value="" />
       </options>
     </properties>
     <root id="root">
-      <element id="archive" name="JavaFXApp.jar">
+      <element id="archive" name="WikiPlus.jar">
         <element id="module-output" name="WikiPlus" />
       </element>
     </root>

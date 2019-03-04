@@ -5,8 +5,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.ListView;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.ArrayList;
 
+import static utils.common.openLink;
 import static utils.wikipedia.options;
 import static utils.wikipedia.search;
 
@@ -18,9 +20,6 @@ public class ResultListController {
 
     static void setSearchText(String text) {
         key = text;
-    }
-
-    static void setMenuItems(String uName) {
     }
 
     private void getOptions() throws IOException {
@@ -51,4 +50,20 @@ public class ResultListController {
     private void home() throws IOException {
         Main.showScene("fxml/Search.fxml");
     }
+
+    @FXML
+    public void Telegram() throws IOException, URISyntaxException {
+        openLink("https://t.me/MightyOdinSon");
+    }
+
+    @FXML
+    public void Github() throws IOException, URISyntaxException {
+        openLink("https://github.com/AjithRamachandran/WikiPlus");
+    }
+
+    @FXML
+    public void Instagram() throws IOException, URISyntaxException {
+        openLink("https://www.instagram.com");
+    }
+
 }

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
@@ -16,61 +13,57 @@
    <center>
       <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <content>
-            <ListView fx:id="tempList" onMouseClicked="#showFullContent" prefHeight="520.0" prefWidth="997.0" stylesheets="/css/bootstrap3.css" />
+            <ListView fx:id="tempList" onMouseClicked="#showFullContent" prefHeight="520.0" prefWidth="997.0" styleClass="list-cell" stylesheets="/css/bootstrap3.css" />
          </content>
       </ScrollPane>
    </center>
    <bottom>
-      <HBox alignment="CENTER" prefHeight="41.0" prefWidth="737.0" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/images/Telegram.png" />
-               </image>
-            </ImageView>
+            <Hyperlink onAction="#Telegram" prefHeight="46.0" prefWidth="49.0">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/images/Telegram.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Hyperlink>
             <Separator orientation="VERTICAL" prefHeight="57.0" prefWidth="14.0" />
-            <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/images/GitHub.png" />
-               </image>
-            </ImageView>
+            <Hyperlink onAction="#Github" prefHeight="46.0" prefWidth="49.0">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/images/GitHub.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Hyperlink>
             <Separator orientation="VERTICAL" prefHeight="57.0" prefWidth="13.0" />
-            <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="/images/Instagram.png" />
-               </image>
-            </ImageView>
+            <Hyperlink onAction="#Instagram" prefHeight="46.0" prefWidth="49.0">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/images/Instagram.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Hyperlink>
          </children>
       </HBox>
    </bottom>
    <top>
-      <HBox alignment="CENTER_RIGHT" prefHeight="25.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
          <children>
-            <Hyperlink contentDisplay="CENTER" nodeOrientation="LEFT_TO_RIGHT" onAction="#home" prefHeight="35.0" prefWidth="140.0">
+            <Hyperlink onAction="#home" prefHeight="46.0" prefWidth="49.0">
                <graphic>
-                  <ImageView fitHeight="35.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="38.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="/images/wikipedia.png" />
+                        <Image url="/images/wiki.png" />
                      </image>
                   </ImageView>
                </graphic>
-               <padding>
-                  <Insets right="800.0" />
-               </padding>
             </Hyperlink>
-            <MenuButton fx:id="options" mnemonicParsing="false" prefHeight="35.0" prefWidth="66.0" styleClass="arrow-button">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Sign in" />
-                  <MenuItem mnemonicParsing="false" text="About" />
-               </items>
-               <graphic>
-                  <ImageView fitHeight="23.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="/images/photo.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </MenuButton>
          </children>
       </HBox>
    </top>

@@ -9,6 +9,8 @@ import org.jsoup.select.Elements;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import static utils.common.toCamelCase;
+
 public class wikipedia {
     public static String search(String key) throws IOException {
         String keyWord = "https://en.wikipedia.org/wiki/" + key;
@@ -23,6 +25,7 @@ public class wikipedia {
 
     public static ArrayList<String> options(String key) throws IOException {
         ArrayList<String> data = new ArrayList<>();
+        key = toCamelCase(key);
         data.add(key);
         String keyWord = "https://en.wikipedia.org/wiki/" + key;
         Connection.Response resp = Jsoup.connect(keyWord).execute();

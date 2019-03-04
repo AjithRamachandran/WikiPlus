@@ -2,22 +2,16 @@ package WikiPlus.controllers;
 
 import WikiPlus.Main;
 import javafx.fxml.FXML;
-import javafx.scene.control.Menu;
-import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 
-
 import java.io.IOException;
+import java.net.URISyntaxException;
+
+import static utils.common.openLink;
 
 public class SearchController {
 
     @FXML private TextField searchField;
-    @FXML private static Menu options;
-
-    static void setMenuItems(String userName) {
-        options.getItems().clear();
-        options.getItems().add(new MenuItem(userName));
-    }
 
     @FXML
     private void search() throws IOException {
@@ -27,13 +21,18 @@ public class SearchController {
     }
 
     @FXML
-    private void signIn() throws IOException {
-        Main.showScene("fxml/SignIn.fxml");
+    public void Telegram() throws IOException, URISyntaxException {
+        openLink("https://t.me/MightyOdinSon");
     }
 
     @FXML
-    private void signUp() throws IOException {
-        Main.showScene("fxml/SignUp.fxml");
+    public void Github() throws IOException, URISyntaxException {
+        openLink("https://github.com/AjithRamachandran/WikiPlus");
+    }
+
+    @FXML
+    public void Instagram() throws IOException, URISyntaxException {
+        openLink("https://www.instagram.com");
     }
 
 }

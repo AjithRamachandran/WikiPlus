@@ -8,15 +8,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
+
+import static utils.common.openLink;
 
 
 public class Main extends Application {
     private static Stage window;
-    public static boolean isSignedIn = false;
-
-    static void editOptions() {
-
-    }
 
     @Override
     public void start(Stage window) throws Exception{
@@ -37,6 +35,18 @@ public class Main extends Application {
         Main.window.setResizable(false);
         Main.window.setOnCloseRequest(e -> Platform.exit());
         Main.window.show();
+    }
+
+    public static void Telegram() throws IOException, URISyntaxException {
+        openLink("https://t.me/MightyOdinSon");
+    }
+
+    public static void Github() throws IOException, URISyntaxException {
+        openLink("https://github.com/AjithRamachandran/WikiPlus");
+    }
+
+    public static void Instagram() throws IOException, URISyntaxException {
+        openLink("https://www.instagram.com");
     }
 
     public static void main(String[] args) {
