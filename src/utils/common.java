@@ -1,9 +1,8 @@
 package utils;
 
-import java.awt.Desktop;
 import java.io.IOException;
 import java.net.URL;
-import java.net.URISyntaxException;
+import java.net.URLConnection;
 
 public class common {
     public static String toCamelCase(final String init) {
@@ -24,7 +23,21 @@ public class common {
         return ret.toString();
     }
 
-    public static void openLink(String url) throws URISyntaxException, IOException {
-        Desktop.getDesktop().browse(new URL(url).toURI());
+    public static void openLink(String url) {
+        try {
+            new ProcessBuilder("x-www-browser", url).start();
+        } catch (IOException ignored) {}
+    }
+
+    public static boolean isInternetAvailable() {
+        try {
+            URL url = new URL("https://www.geeksforgeeks.org/");
+            URLConnection connection = url.openConnection();
+            connection.connect();
+            return false;
+        }
+        catch (Exception e) {
+            return true;
         }
     }
+}

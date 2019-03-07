@@ -5,7 +5,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
 
 import static utils.common.openLink;
 
@@ -35,17 +34,17 @@ public class ResultController {
     }
 
     @FXML
-    public void Telegram() throws IOException, URISyntaxException {
+    public void Telegram() {
         openLink("https://t.me/MightyOdinSon");
     }
 
     @FXML
-    public void Github() throws IOException, URISyntaxException {
+    public void Github() {
         openLink("https://github.com/AjithRamachandran/WikiPlus");
     }
 
     @FXML
-    public void Instagram() throws IOException, URISyntaxException {
+    public void Instagram() {
         openLink("https://www.instagram.com");
     }
 }

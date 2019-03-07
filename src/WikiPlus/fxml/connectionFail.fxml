@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WikiPlus.controllers.ConnectionFailController">
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Hyperlink onAction="#home">
+                    <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="/images/wiki.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Hyperlink>
+                <Separator orientation="VERTICAL" prefHeight="46.0" prefWidth="27.0" />
+                <Hyperlink onAction="#refresh" prefHeight="46.0" prefWidth="54.0">
+                    <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/refresh.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Hyperlink>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <TextArea fx:id="content" editable="false" prefHeight="502.0" prefWidth="998.0" wrapText="true">
+            <font>
+                <Font size="18.0" />
+            </font></TextArea>
+
+    </center>
+</BorderPane>
+
