@@ -1,5 +1,12 @@
 package utils;
 
+import WikiPlus.Main;
+import javafx.application.Platform;
+import javafx.concurrent.Task;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+
 import java.io.IOException;
 import java.net.URL;
 import java.net.URLConnection;
@@ -31,7 +38,7 @@ public class common {
 
     public static boolean isInternetAvailable() {
         try {
-            URL url = new URL("https://www.geeksforgeeks.org/");
+            URL url = new URL("https://www.google.co.in/");
             URLConnection connection = url.openConnection();
             connection.connect();
             return false;
@@ -40,4 +47,30 @@ public class common {
             return true;
         }
     }
+
+    public static void ResultList() throws IOException {
+        Main.showScene("fxml/LoadingPage.fxml");
+
+        Task<Parent> task = new Task<Parent>() {
+            @Override
+            public Parent call() throws Exception {
+                if (isInternetAvailable()) {
+                    return FXMLLoader.load(Main.class.getResource("fxml/ConnectionFail.fxml"));
+                } else {
+                    return FXMLLoader.load(Main.class.getResource("fxml/ResultList.fxml"));
+                }
+            }
+        };
+
+        task.setOnSucceeded(e -> {
+            Main.window.setScene(new Scene(task.getValue()));
+            Main.window.setResizable(false);
+            Main.window.setOnCloseRequest(f -> Platform.exit());
+            Main.window.show();
+        });
+
+        Thread thread = new Thread(task);
+        thread.start();
+    }
+
 }

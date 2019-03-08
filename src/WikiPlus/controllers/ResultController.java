@@ -6,6 +6,7 @@ import javafx.scene.control.TextArea;
 
 import java.io.IOException;
 
+import static utils.common.ResultList;
 import static utils.common.openLink;
 
 
@@ -25,7 +26,7 @@ public class ResultController {
 
     @FXML
     private void resultList() throws IOException {
-        Main.showScene("fxml/ResultList.fxml");
+        ResultList();
     }
 
     @FXML

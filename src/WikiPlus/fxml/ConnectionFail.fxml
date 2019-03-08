@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
@@ -27,7 +27,7 @@
                     <graphic>
                         <ImageView fitHeight="38.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                             <image>
-                                <Image url="@../../images/refresh.png" />
+                                <Image url="/images/refresh.png" />
                             </image>
                         </ImageView>
                     </graphic>
@@ -35,12 +35,10 @@
             </children>
         </HBox>
     </top>
-    <center>
-        <TextArea fx:id="content" editable="false" prefHeight="502.0" prefWidth="998.0" wrapText="true">
-            <font>
-                <Font size="18.0" />
-            </font></TextArea>
-
-    </center>
+   <center>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="358.0" prefWidth="717.0" text="Internet not available :( Cross check your internet connectivity and try again" wrapText="true" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+   </center>
 </BorderPane>
-

@@ -14,7 +14,7 @@ import static utils.common.openLink;
 
 
 public class Main extends Application {
-    private static Stage window;
+    public static Stage window;
 
     @Override
     public void start(Stage window) throws Exception{
