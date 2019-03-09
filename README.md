@@ -4,7 +4,7 @@ A Desktop client for Wikipedia
 
 ## Getting Started
 
-Go to this [Website](http://www.mediafire.com/folder/j0oo616dvoznt/WikiPlus) to download the Latest release
+Go to this [Link](https://github.com/AjithRamachandran/WikiPlus/releases) or this [Website](http://www.mediafire.com/folder/j0oo616dvoznt/WikiPlus) to download the Latest release
 
 ### Prerequisites
 
