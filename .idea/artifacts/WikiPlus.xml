@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="javafx" name="JavaFXApp">
-    <output-path>$PROJECT_DIR$/out/artifacts/JavaFXApp</output-path>
+  <artifact type="javafx" name="WikiPlus">
+    <output-path>$PROJECT_DIR$/out/artifacts/WikiPlus</output-path>
     <properties id="javafx-properties">
       <options>
         <option name="appClass" value="WikiPlus.Main" />
@@ -14,6 +14,7 @@
     <root id="root">
       <element id="archive" name="WikiPlus.jar">
         <element id="module-output" name="WikiPlus" />
+        <element id="extracted-dir" path="$USER_HOME$/Downloads/jsoup-1.11.3.jar" path-in-jar="/" />
       </element>
     </root>
   </artifact>

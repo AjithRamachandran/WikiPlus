@@ -16,22 +16,24 @@ Java 8
 
 Download latest release and run it with
 ```
-java -jar WikiPlus.jar
+java -jar WikiPlus-<version>.jar
 ```
+
+OR
+
+Change the permissions with
+```
+chmod 755 WikiPlus-<version>.jar
+```
+And open the file
 
 ## Built With
 
 * JavaFX
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us. 
-
 ## Authors
 
 * **Ajith Ramachandran** - *Initial work* - [WikiPlus](https://github.com/AjithRamachandran/WikiPlus)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
